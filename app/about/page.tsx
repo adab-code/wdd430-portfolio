@@ -6,7 +6,7 @@ export default function About() {
     <main className="max-w-4xl mx-auto px-4 py-12">
       <h2 className="text-3xl font-bold mb-4">About Me</h2>
       <p className="text-lg text-gray-700 leading-8 mb-4">
-        I'm Xavier Rodriguez, a web developer focused on building clean, functional,
+        I'm Aaron Alfaro, a web developer focused on building clean, functional,
         and mobile-first applications. I enjoy turning ideas into well-structured, maintainable
         code using modern tools like Next.js, TypeScript,and Tailwind CSS.
       </p>
