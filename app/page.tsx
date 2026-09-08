@@ -2,35 +2,32 @@ import ProjectList from "@/components/ProjectList";
 
 const projects = [
   {
-    title: "Habit Tracker App",
+    title: "31 DÍAS para MI PRIME — Habit Tracker",
     description:
-      "A mobile-first habit tracking app that helps you build discipline with daily checklists, weekly win/loss records, and a circular monthly progress wheel.",
+      "A mobile-first habit tracking app built around a circular monthly progress wheel, daily day/night checklists,and a weekly wins-vs-losses dashboard. Designed with a high-contrast, sport-inspired 'record & discipline' identity for men 18–30 focused on self-discipline and fitness.",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
     link: "https://github.com/adab-code/wdd430-portfolio",
   },
   {
-    title: "Weather Dashboard",
+    title: "WDD430 Portfolio",
     description:
-      "A responsive dashboard that fetches and visualizes live weather data from a public REST API.",
-    technologies: ["Next.js", "TypeScript", "REST API"],
+      "This portfolio site, built to showcase my projects. Features reusable typed components, a shared layout with client-side navigation, responsive Tailwind styling,and a simple API route.",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
     link: "https://github.com/adab-code/wdd430-portfolio",
-  },
-  {
-    title: "Task Manager",
-    description:
-      "A productivity app for organizing tasks and projects with a clean, mobile-first interface.",
-    technologies: ["Next.js", "React", "Tailwind CSS"],
   },
 ];
 
 export default function Home() {
   return (
-    <section className="mx-auto flex-1 max-w-4xl px-4 py-12">
-      <h1 className="text-4xl font-bold mb-2">Xavier Rodriguez</h1>
-      <p className="text-lg text-gray-700 mb-8">
-        Full-Stack Developer building clean, functional web experiences.
-      </p>
+    <main className="container mx-auto px-4 py-12">
+      <section className="text-center py-8">
+        <h1 className="text-4xl font-bold mb-4">Xavier Rodriguez</h1>
+        <p className="text-lg text-gray-700">
+          I'm a full-stack developer learning Next.js, React,and TypeScript. Here are some of my
+          recent projects.
+        </p>
+      </section>
       <ProjectList projects={projects} />
-    </section>
+    </main>
   );
 }
