@@ -20,12 +20,18 @@ const projects = [
 export default function Home() {
   return (
     <main className="container mx-auto px-4 py-12">
-      <section className="text-center py-8">
-        <h1 className="text-4xl font-bold mb-4 text-white">Aaron Alfaro</h1>
+      <section className="text-center py-10">
+        <h1 className="text-4xl font-bold mb-4 text-white [text-shadow:0_0_12px_rgba(239,68,68,0.8),0_0_24px_rgba(239,68,68,0.4)]">
+          Aaron Alfaro
+        </h1>
         <p className="text-lg text-zinc-400">
           I'm a full-stack developer learning Next.js, React, and TypeScript. Here
           are some of my recent projects.
         </p>
+        <div
+          aria-hidden="true"
+          className="mx-auto mt-6 h-px w-24 bg-red-500 shadow-[0_0_10px_rgba(239,68,68,0.7)]"
+        />
       </section>
       <ProjectList projects={projects} />
     </main>

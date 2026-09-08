@@ -4,7 +4,9 @@ import SkillList from "@/components/SkillList";
 export default function About() {
   return (
     <main className="max-w-4xl mx-auto px-4 py-12">
-      <h2 className="text-3xl font-bold mb-4 text-white">About Me</h2>
+      <h2 className="text-3xl font-bold mb-4 text-white [text-shadow:0_0_10px_rgba(239,68,68,0.7)]">
+        About Me
+      </h2>
       <p className="text-lg text-zinc-400 leading-8 mb-4">
         I'm Aaron Alfaro, a web developer focused on building clean, functional,
         and mobile-first applications. I enjoy turning ideas into well-structured,
@@ -29,7 +31,7 @@ export default function About() {
       <p className="mt-8">
         <Link
           href="/"
-          className="font-medium text-blue-400 transition-colors hover:text-blue-300"
+          className="font-medium text-red-400 transition-all hover:text-red-300 [text-shadow:0_0_8px_rgba(239,68,68,0.7)]"
         >
           &larr; Back to Home
         </Link>
